@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EUROVANTO | Marché européen</title>
+<meta name="description" content="EUROVANTO — sélection de vélos, réfrigérateurs et tracteurs du marché européen.">
+<style>
+:root{
+  --dark:#0b1220;
+  --dark2:#111c30;
+  --accent:#f5b400;
+  --text:#172033;
+  --muted:#667085;
+  --bg:#f5f7fa;
+  --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+a{text-decoration:none;color:inherit}
+header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(11,18,32,.96);color:#fff;
+  padding:14px 18px;display:flex;align-items:center;justify-content:space-between;
+  box-shadow:0 2px 14px rgba(0,0,0,.18)
+}
+.logo{font-size:24px;font-weight:900;letter-spacing:2px}
+.logo span{color:var(--accent)}
+.header-contact{font-size:12px;text-align:right;line-height:1.35}
+.hero{
+  min-height:590px;padding:48px 18px 38px;
+  background:linear-gradient(135deg,#0b1220 0%,#18263d 100%);
+  color:#fff;
+}
+.hero-inner{max-width:1150px;margin:auto}
+.hero-copy{padding:14px 0 24px}
+.badge{
+  display:inline-block;background:rgba(245,180,0,.15);border:1px solid rgba(245,180,0,.5);
+  color:#ffd45a;padding:7px 11px;border-radius:30px;font-size:12px;font-weight:700;
+}
+h1{font-size:clamp(34px,7vw,62px);line-height:1.02;margin:15px 0 10px;letter-spacing:-1.5px}
+.hero-copy p{font-size:17px;line-height:1.55;color:#d7deea;max-width:680px;margin:0 0 20px}
+.cta{
+  display:inline-block;background:var(--accent);color:#111;font-weight:800;
+  padding:13px 19px;border-radius:10px;box-shadow:0 8px 22px rgba(245,180,0,.18)
+}
+.visual-grid{
+  display:grid;grid-template-columns:1.35fr .9fr;grid-template-rows:1fr 1fr;
+  gap:12px;height:350px
+}
+.visual{
+  position:relative;overflow:hidden;border-radius:18px;background:#202a3b;
+  min-height:150px;box-shadow:0 12px 30px rgba(0,0,0,.22)
+}
+.visual:first-child{grid-row:1/3}
+.visual img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.visual:hover img{transform:scale(1.04)}
+.visual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.7),transparent 55%)}
+.visual-label{position:absolute;left:15px;bottom:14px;z-index:2;font-size:18px;font-weight:800}
+.section{max-width:1150px;margin:auto;padding:52px 18px}
+.section h2{text-align:center;font-size:31px;margin:0 0 9px}
+.section-intro{text-align:center;color:var(--muted);margin:0 auto 28px;max-width:700px;line-height:1.5}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 28px rgba(16,24,40,.08);
+  transition:transform .2s,box-shadow .2s
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(16,24,40,.13)}
+.card img{width:100%;height:210px;object-fit:cover;display:block}
+.card-body{padding:20px}
+.card h3{margin:0 0 7px;font-size:23px}
+.card p{margin:0 0 16px;color:var(--muted);line-height:1.5;font-size:14px}
+.btn{
+  display:inline-block;background:var(--dark);color:#fff;padding:11px 15px;border-radius:9px;font-weight:700;font-size:14px
+}
+.catalog{
+  background:#fff;border-radius:20px;padding:28px;box-shadow:0 8px 28px rgba(16,24,40,.07)
+}
+.catalog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.catalog a{padding:15px;border:1px solid #e5e7eb;border-radius:12px;background:#fafafa;font-weight:700}
+.catalog a:hover{border-color:var(--accent);background:#fffaf0}
+.info{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px
+}
+.info div{background:#111c30;color:#fff;border-radius:15px;padding:19px}
+.info strong{display:block;color:#ffd45a;margin-bottom:5px}
+footer{background:#0b1220;color:#d7deea;padding:28px 18px;text-align:center;font-size:13px;line-height:1.6}
+footer strong{color:#fff}
+@media(max-width:760px){
+  header{position:relative}
+  .header-contact{display:none}
+  .hero{min-height:auto}
+  .visual-grid{height:420px;grid-template-columns:1fr 1fr;grid-template-rows:1.3fr 1fr}
+  .visual:first-child{grid-column:1/3;grid-row:auto}
+  .cards,.catalog-grid,.info{grid-template-columns:1fr}
+  .card img{height:220px}
+  .section{padding:40px 15px}
+  h1{font-size:40px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">EURO<span>VANTO</span></div>
+  <div class="header-contact">
+    <div>Marché européen</div>
+    <div>+1 833 516 4765 • kundenservice@eurovanto.de</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="badge">SÉLECTION DU MARCHÉ ALLEMAND</span>
+      <h1>Les produits que vous recherchez, visibles dès votre arrivée.</h1>
+      <p>Vélos & E-Bikes, réfrigérateurs et tracteurs sélectionnés pour le marché européen.</p>
+      <a class="cta" href="#produits">Découvrir nos produits ↓</a>
+    </div>
+
+    <div class="visual-grid">
+      <a class="visual" href="velos-eurovanto-toutes-categories-2026.html">
+        <img src="https://www.kelvelo.com/98656-large_default/vae-haibike-trekking-9-abs-high-2026.jpg" alt="Haibike Trekking 9 ABS">
+        <div class="visual-label">🚲 Vélos & E-Bikes</div>
+      </a>
+      <a class="visual" href="refrigerateurs-eurovanto-populaires-allemagne-2026.html">
+        <img src="https://www.expert.nl/cdn/resize/1500/media/frontend/catalog/products/776/372650776/1260x1260/372650776-14846257.jpg" alt="Réfrigérateur Bosch">
+        <div class="visual-label">🧊 Réfrigérateurs</div>
+      </a>
+      <a class="visual" href="tracteurs-eurovanto-populaires-allemagne-2026.html">
+        <img src="https://www.fendt.com/de/geneva-assets/widget/42297/news-43-thumb.webp" alt="Fendt 728 Vario" onerror="this.style.display='none';this.parentElement.classList.add('no-image');">
+        <div class="visual-label">🚜 Tracteurs</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="produits">
+  <h2>Découvrez nos catégories</h2>
+  <p class="section-intro">Une présentation plus visuelle : le client voit immédiatement les produits avant de choisir son catalogue.</p>
+
+  <div class="cards">
+    <article class="card">
+      <img src="https://www.kelvelo.com/98656-large_default/vae-haibike-trekking-9-abs-high-2026.jpg" alt="Vélo électrique Haibike">
+      <div class="card-body">
+        <h3>🚲 Vélos & E-Bikes</h3>
+        <p>Une sélection de modèles urbains, trekking, VTT et vélos électriques.</p>
+        <a class="btn" href="velos-eurovanto-toutes-categories-2026.html">Voir tous les vélos</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://www.expert.nl/cdn/resize/1500/media/frontend/catalog/products/776/372650776/1260x1260/372650776-14846257.jpg" alt="Réfrigérateur Bosch">
+      <div class="card-body">
+        <h3>🧊 Réfrigérateurs</h3>
+        <p>Bosch, Siemens, Liebherr, Miele, Samsung, LG et autres références populaires.</p>
+        <a class="btn" href="refrigerateurs-eurovanto-populaires-allemagne-2026.html">Voir les réfrigérateurs</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://static.landwirt.com/3330-1dfc8f1bff12ad0d48c462c2416bb280-6075600-0vb.jpg" alt="Fendt 728 Vario">
+      <div class="card-body">
+        <h3>🚜 Tracteurs</h3>
+        <p>Fendt, John Deere, CLAAS, Deutz-Fahr, New Holland, Valtra et Case IH.</p>
+        <a class="btn" href="tracteurs-eurovanto-populaires-allemagne-2026.html">Voir les tracteurs</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="catalog">
+    <h2>Catalogues marché allemand</h2>
+    <p class="section-intro">Accédez directement aux catalogues complets actuellement intégrés au site.</p>
+    <div class="catalog-grid">
+      <a href="velos-eurovanto-toutes-categories-2026.html">🚲 Catalogue vélos & E-Bikes</a>
+      <a href="refrigerateurs-eurovanto-populaires-allemagne-2026.html">🧊 Catalogue réfrigérateurs</a>
+      <a href="tracteurs-eurovanto-populaires-allemagne-2026.html">🚜 Catalogue tracteurs</a>
+    </div>
+
+    <div class="info">
+      <div><strong>Vélos</strong>Paiement 100% avant livraison.</div>
+      <div><strong>Réfrigérateurs</strong>70% à la commande + 30% à la livraison.</div>
+      <div><strong>Tracteurs</strong>70% à la commande + 30% à la livraison.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>EUROVANTO</strong><br>
+  Marché européen • +1 833 516 4765 • kundenservice@eurovanto.de<br>
+  <span>Les visuels produits sont présentés à titre illustratif. Les disponibilités, prix et conditions doivent être confirmés avant commande.</span>
+</footer>
+
+</body>
+</html>
